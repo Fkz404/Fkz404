@@ -3,4 +3,3 @@
 - I’m currently learning ComputerEngineer
 - I’m looking to collaborate on ...
 - looking to collaborate flukewarath warat.dol (gmaiil hotmail)
--
