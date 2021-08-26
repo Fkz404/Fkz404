@@ -1,0 +1,6 @@
+- 👋 Hi, I’m Warat dol my nickname fluke // Fakama
+- I’m interested in software hardware and coding
+- I’m currently learning ComputerEngineer
+- I’m looking to collaborate on ...
+- looking to collaborate flukewarath warat.dol (gmaiil hotmail)
+-
