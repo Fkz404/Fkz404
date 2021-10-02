@@ -34,7 +34,7 @@ class UI:                                                                   #ช
         label2 = Label(text = "Enter your order:")                          #บอกให้ลูกค้าใส่ชื่อเมนู
         label2.pack()                                                       #บอกกำหนดต่อข้อมูลจากคำสั่งข้างบน
 
-        self.user_order_menu = Entry(text = " ")                            #ส่วนที่ให้ลูกค้ากรอกสิ่งที่จะสั่งจากทางร้าน
+        self.user_order_menu = Entry(text = "")                             #ส่วนที่ให้ลูกค้ากรอกสิ่งที่จะสั่งจากทางร้าน
         self.user_order_menu.pack()                                         #ส่วนกำหนดข้อมูลจากคำสั่งด้านบน
         self.user_order_menu["justify"] = "center"                          #ตัวเคอร์เซอร์กระพิบที่ลูกค้าสั่งให้มันอยูตรงกลาง
         self.user_order_menu.focus()                                        #ตัวคำสั่งที่ต้องมาเพื่อ.....? (ไม่มีก็ได้นะ)
@@ -42,7 +42,7 @@ class UI:                                                                   #ช
         label3 = Label(text = "Enter your quantity:")                       #บอกให้ลูกค้าใส่จำนวนแก้วที่ต้องการจะสั่ง
         label3.pack()                                                       #บอกกำหนดต่อข้อมูลจากคำสั่งข้างบน
 
-        self.user_order_quan = Entry(text = " ")                            #ส่วนที่ให้ลูกค้ากรอกจำนวน
+        self.user_order_quan = Entry(text = "")                             #ส่วนที่ให้ลูกค้ากรอกจำนวน
         self.user_order_quan.pack()                                         #ส่วนกำหนดข้อมูลจากคำสั่งด้านบน
         self.user_order_quan["justify"] = "center"                          #ตัวเคอร์เซอร์กระพิบที่ลูกค้าสั่งให้มันอยูตรงกลาง
         self.user_order_quan.focus()                                        #ตัวคำสั่งที่ต้องมาเพื่อ.....? (ไม่มีก็ได้นะ)
@@ -95,7 +95,7 @@ class FinalScreen:                                                          #ก
             product = '{} x{}'.format(self.user_order[i][0], self.user_order[i][1])                     #ตัวแปรเก็บว่ามีอะไรที่ลูกค้าสั่ง (ชื่อเมนูที่ลูกค้าสั่ง // จำนวนแก้ว)
             price = ' {}'.format(self.dict_menu[self.user_order[i][0]] * int(self.user_order[i][1]))    #ตัวแปรเก็บว่ามีอะไรที่ลูกค้าสั่ง (ราคาของแต่ละเมนู)
             print_bill.write(product)                                                                   #การเขียนเข้า txt ไฟล์โดยที่เราเลือกตัวแปร (product)
-            print_bill.write(price + 'B \n')                                                            #การเขียนเข้า txt ไฟล์โดยที่เราเลือกตัวแปร (price)
+            print_bill.write(price + '\n')                                                            #การเขียนเข้า txt ไฟล์โดยที่เราเลือกตัวแปร (price)
             
         cost = 'Total Cost is {}'.format(self.sum_price)                    #สร้างตัวแปรเก็บราคารวมไว้
         print_bill.write(cost + '\n')                                       #การเขียนเข้า txt ไฟล์โดยที่เราเลือกตัวแปร (cost)
