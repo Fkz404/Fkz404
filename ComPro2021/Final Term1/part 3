@@ -1,0 +1,9 @@
+#ลบค่าซ้ำออกจาก list
+listnumber = [87, 45, 41, 65, 94, 41, 99, 94]  #ประกาศตัวแปรที่เราคัดมาแล้ว
+set1 = set(listnumber)                         #ให้ set1 รวม listnumber ให้เป็นกลุ่มเลขซ้ำ
+list2 = list(set1)                             #แปร set1 ให่้เป็น list เพื่อเป็นข้อมูล ใช้ set ลบค่าที่ซ้ำกันออก 
+tuple1 = tuple(set1)                           #แปร set1 ให้เป็น tuple หมายถึง listที่เราไม่สามารถแก้ข้อมูลได้
+print("Unique item", list2)                    #สั่งปริ้นตัวเลขที่เราคัดมาแล้ว
+print("tuple is", tuple1)                      #สั่งปริ้น list ที่เราไม่สามารถแก้ข้อมูลได้
+print("Max is", max(tuple1))                   #สั่งปริ้นค่ามากที่สุดจาก tuple1
+print("Min is", min(tuple1))                   #สั่งปริ้นค่าน้อยสุดจาก tuple1
