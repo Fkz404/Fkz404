@@ -1,8 +1,0 @@
-# แสดงชื่อประเทศ 5 ประเทศพร้อมให้ User เลือกที่อยากไปมากที่สุด
-X = ("1.Australia" ,"2.America", "3.Japan", "4.Canada", "5.Englane") #ประกาศตัวแปร
-list1 = []                      #ประกาศ list
-for i in range (3):             #ประกาศขอบเขตของตัวแปร
-    user = int(input(" "))      #รับ input จาก User
-    list1.append(X [user-1])    #appendเพิ่มต่อท้ายเพื่อเพิ่มข้อมูลเข้าไปใน List ส่วน -1 ใช้แทนตัว index
-for j in list1 :                #ประกาศขอบเขตให้อยู่ใน list1
-    print (j , end = " ")       #สั่งปริ้นตัวแปร
